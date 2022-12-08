@@ -2,7 +2,7 @@ import type { GetServerSideProps, NextPage } from "next";
 import Router from "next/router";
 import { format } from "path";
 import { useState } from "react";
-import {prisma} from '../lib/prisma'
+import prisma from '../lib/prisma'
 import { useRouter } from "next/router";
 
 interface Posts {
