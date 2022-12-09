@@ -89,7 +89,7 @@ const Home = ({ posts }: Posts) => {
           value={form.content}
           onChange={(e) => setForm({ ...form, content: e.target.value })}
         />
-        <button type="submit">ADD</button>
+        <button type="submit">ADD!</button>
       </form>
       <div>
         <ul>
