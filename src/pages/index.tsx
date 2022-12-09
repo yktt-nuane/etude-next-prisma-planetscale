@@ -1,7 +1,8 @@
 import type { GetServerSideProps } from "next";
-import { useState } from "react";
-import prisma from "../lib/prisma";
 import { useRouter } from "next/router";
+import { useState } from "react";
+
+import prisma from "../../lib/prisma";
 
 interface Posts {
   posts: {
