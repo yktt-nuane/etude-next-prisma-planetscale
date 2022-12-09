@@ -34,6 +34,3 @@ This project is licensed under the MIT License, see the [LICENSE](./LICENSE) for
 ### Contributors
 
 - [Tatsuro Yokoyama](https://github.com/yktt-nuane)
-- [sforzando LLC. and Inc.](https://sforzando.co.jp/)
-  - [Shin'ichiro Suzuki](https://github.com/shin-sforzando)
-  - [Shiho Watanabe](https://github.com/shiho-sforzando)
