@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "eslint:fix": "eslint src --ext .js,jsx,.ts,.tsx --fix",
-   "stylelint:fix": "stylelint src/**/*.{css,scss} --fix",
-   "prettier:fix": "prettier --check --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,mdx}'",
-   "format": "npm run eslint:fix && npm run stylelint:fix && npm run prettier:fix"
+    "stylelint:fix": "stylelint src/**/*.{css,scss} --fix",
+    "prettier:fix": "prettier --check --write 'src/**/*.{js,jsx,ts,tsx,css,scss,md,mdx}'",
+    "format": "npm run eslint:fix && npm run stylelint:fix && npm run prettier:fix"
   },
   "dependencies": {
     "@types/node": "18.11.10",
@@ -32,6 +32,8 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
     "prettier": "^2.8.1",
     "prisma": "^4.7.1",
     "stylelint": "^14.16.0",
@@ -41,5 +43,13 @@
     "stylelint-prettier": "^2.0.0",
     "stylelint-scss": "^4.3.0",
     "ts-node": "^10.9.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "npm run format"
   }
 }
